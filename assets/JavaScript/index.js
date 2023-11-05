@@ -22,6 +22,7 @@ console.log(`К концу расчётного периода прирост с
 
 button.addEventListener('click', () => {
   const sum = document.querySelector('.sum').value;
-  total.textContent = (message); 
-  console.log(`Через год у вас будет` + total +  ` руб. с учетом процентной ставки 7% годовых`)
+  let message = (sum * 1.07);
+  total.textContent = (`Через год у вас будет ${message} руб. на счету с учётом процентной ставки 7% годовых`);
+  console.log(total.textContent); 
 });
